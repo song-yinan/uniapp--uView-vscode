@@ -10988,7 +10988,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /*
  * @,@Author: ,: 宋一楠
  * @,@Date: ,: 2020-12-17 21:34:06
- * @,@LastEditTime: ,: 2021-02-07 15:53:18
+ * @,@LastEditTime: ,: 2021-02-18 10:06:59
  * @,@LastEditors: ,: Please set LastEditors
  * @,@Description: ,: In User Settings Edit
  * @,@FilePath: ,: /wxapp/src/store/index.js
@@ -11022,7 +11022,7 @@ var saveLifeData = function saveLifeData(key, value) {
 var baseUrl = '';
 
 if (true) {
-  baseUrl = 'https://cdc-test.risechina.com';
+  baseUrl = '?????';
 } else {}
 
 var store = new _vuex.default.Store({
@@ -11044,21 +11044,10 @@ var store = new _vuex.default.Store({
     },
     // 微信信息
     vuex_wechatInfo: {
-      appid: 'wx17a9d4e16a935873'
+      appid: ''
     },
     // 自定义tabbar数据
-    vuex_tabbar: [{
-      iconPath: "/static/uview/example/component.png",
-      selectedIconPath: "/static/uview/example/component_select.png",
-      text: '组件',
-      pagePath: '/pages/index/index'
-    }, {
-      iconPath: "/static/uview/example/js.png",
-      selectedIconPath: "/static/uview/example/js_select.png",
-      text: '工具',
-      midButton: true,
-      pagePath: '/pages/index/index'
-    }]
+    vuex_tabbar: [{}, {}]
   },
   mutations: {
     $uStore: function $uStore(state, payload) {
